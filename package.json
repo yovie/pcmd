@@ -1,6 +1,6 @@
 {
     "name": "pcmd",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Personal command",
     "main": "index.js",
     "scripts": {

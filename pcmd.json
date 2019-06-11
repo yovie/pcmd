@@ -8,12 +8,6 @@
         },
         {
             "name": "mongodb"
-        },
-        {
-            "name": "aeds"
-        },
-        {
-            "name": "sox"
         }
     ],
     "commands": {
@@ -42,22 +36,6 @@
             },
             "stop": {
                 "cmd": "sudo service mongodb stop"
-            }
-        },
-        "aeds": {
-            "start": {
-                "cmd": ""
-            },
-            "stop": {
-                "cmd": ""
-            }
-        },
-        "sox": {
-            "start": {
-                "cmd": ""
-            },
-            "stop": {
-                "cmd": ""
             }
         }
     }

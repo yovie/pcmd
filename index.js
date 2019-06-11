@@ -1,10 +1,9 @@
-#!/home/yovie/.nvm/versions/node/v11.15.0/bin/node
-
 const fs = require('fs');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
+const homedir = require('os').homedir();
 
-const config = JSON.parse(fs.readFileSync('./config.json'));
+const config = JSON.parse(fs.readFileSync(homedir + '/pcmd.json'));
 
 const app = process.argv[2];
 
@@ -40,7 +39,7 @@ async function run(cmd) {
             console.error(stderr);
         }
     } catch (ex) {
-        console.error(ex);
+        // console.error(ex);
     }
 }
 

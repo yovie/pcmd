@@ -1,0 +1,64 @@
+{
+    "applications": [
+        {
+            "name": "mariadb"
+        },
+        {
+            "name": "mysql"
+        },
+        {
+            "name": "mongodb"
+        },
+        {
+            "name": "aeds"
+        },
+        {
+            "name": "sox"
+        }
+    ],
+    "commands": {
+        "mariadb": {
+            "start": {
+                "cmd": "sudo service mariadb start"
+            },
+            "status": {
+                "cmd": "sudo service mariadb status"
+            },
+            "stop": {
+                "cmd": "sudo service mariadb stop"
+            }
+        },
+        "mysql": {
+            "start": {
+                "cmd": "sudo docker start b21e18dabe8f"
+            },
+            "stop": {
+                "cmd": "sudo docker stop b21e18dabe8f"
+            }
+        },
+        "mongodb": {
+            "start": {
+                "cmd": "sudo service mongodb start"
+            },
+            "stop": {
+                "cmd": "sudo service mongodb stop"
+            }
+        },
+        "aeds": {
+            "start": {
+                "cmd": ""
+            },
+            "stop": {
+                "cmd": ""
+            }
+        },
+        "sox": {
+            "start": {
+                "cmd": ""
+            },
+            "stop": {
+                "cmd": ""
+            }
+        }
+    }
+}

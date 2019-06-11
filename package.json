@@ -1,0 +1,27 @@
+{
+  "name": "pcmd",
+  "version": "1.0.0",
+  "description": "Personal command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yovie/pcmd.git"
+  },
+  "keywords": [
+    "command"
+  ],
+  "author": "yovie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yovie/pcmd/issues"
+  },
+  "homepage": "https://github.com/yovie/pcmd#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fs": "0.0.1-security",
+    "util": "^0.12.0"
+  }
+}

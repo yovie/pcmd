@@ -1,42 +1,59 @@
 {
-    "applications": [
-        {
-            "name": "mariadb"
-        },
-        {
-            "name": "mysql"
-        },
-        {
-            "name": "mongodb"
-        }
-    ],
-    "commands": {
-        "mariadb": {
-            "start": {
-                "cmd": "sudo service mariadb start"
-            },
-            "status": {
-                "cmd": "sudo service mariadb status"
-            },
-            "stop": {
-                "cmd": "sudo service mariadb stop"
-            }
-        },
-        "mysql": {
-            "start": {
-                "cmd": "sudo docker start b21e18dabe8f"
-            },
-            "stop": {
-                "cmd": "sudo docker stop b21e18dabe8f"
-            }
-        },
-        "mongodb": {
-            "start": {
-                "cmd": "sudo service mongodb start"
-            },
-            "stop": {
-                "cmd": "sudo service mongodb stop"
-            }
-        }
-    }
+	"services": [
+		{
+			"name": "mariadb"
+		},
+		{
+			"name": "mysql"
+		},
+		{
+			"name": "mongodb"
+		},
+		{
+			"name": "custom1"
+		}
+	],
+	"commands": {
+		"mariadb": {
+			"start": {
+				"cmd": "sudo service mariadb start"
+			},
+			"status": {
+				"cmd": "sudo service mariadb status"
+			},
+			"stop": {
+				"cmd": "sudo service mariadb stop"
+			}
+		},
+		"mysql": {
+			"start": {
+				"cmd": "sudo docker start b21e18dabe8f"
+			},
+			"stop": {
+				"cmd": "sudo docker stop b21e18dabe8f"
+			}
+		},
+		"mongodb": {
+			"start": {
+				"cmd": "sudo service mongodb start"
+			},
+			"stop": {
+				"cmd": "sudo service mongodb stop"
+			}
+		},
+		"custom1": {
+			"start": {
+				"require": [
+					"mysql",
+					"mongodb"
+				]
+			},
+			"stop": {
+				"require": [
+					"mysql",
+					"mongodb"
+				]
+			}
+		}
+	}
 }
